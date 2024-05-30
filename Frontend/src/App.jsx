@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Provider } from 'react-redux'
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Books from "./components/Books";
@@ -35,19 +34,16 @@ function App() {
     <BrowserRouter>
       <Navbar role={role} />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/books" element={<Books role={role} />}></Route>
-        <Route path="/login" element={<Login setRoleVar={setRole} />}></Route>
-        <Route path="/dashboard" element={<Dashboard />}></Route>
-        <Route path="/adduser" element={<AddUser />}></Route>
-        <Route path="/logout" element={<Logout setRole={setRole} />}></Route>
-        <Route path="/addbook" element={<AddBook />}></Route>
-        <Route path="/book/:id" element={<EditBook />}></Route>
-        <Route path="/delete/:id" element={<DeleteBook />}></Route>
-        <Route path="/cart" element={<Cart />}></Route>
-
-        
-
+        <Route path="/" element={<Home />} />
+        <Route path="/books" element={<Books role={role} />} />
+        <Route path="/login" element={<Login setRoleVar={setRole} />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/adduser" element={<AddUser />} />
+        <Route path="/logout" element={<Logout setRole={setRole} />} />
+        <Route path="/addbook" element={<AddBook />} />
+        <Route path="/book/:id" element={<EditBook />} />
+        <Route path="/delete/:id" element={<DeleteBook />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
   );
