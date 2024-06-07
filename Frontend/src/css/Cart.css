@@ -1,0 +1,53 @@
+
+.cart-items {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #0e0909;
+    border-radius: 8px;
+    background-color: #f0ecec;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-items-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .cart-items-header > * {
+    flex: 0 1 60%; /* Элементы занимают 60% ширины контейнера */
+    min-width: 300px; /* Минимальная ширина для каждого элемента */
+    max-width: 60%;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #080101;
+    margin: 20px 0;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px; 
+    font-size: 16px;
+    color: #fff;
+    background-color: #363ce4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1faf26;
+  }
+  
+  
